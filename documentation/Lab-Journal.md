@@ -1,12 +1,12 @@
 # Lab Journal
 
+---
+
 ## Day 1 — July 12, 2026
 
 ### Goal
 
 Build the foundation for a home SOC lab using Windows Server 2022, VirtualBox, and Splunk Enterprise.
-
----
 
 ### Completed
 
@@ -17,54 +17,58 @@ Build the foundation for a home SOC lab using Windows Server 2022, VirtualBox, a
 - Installed Oracle VirtualBox.
 - Downloaded the Windows Server 2022 Evaluation ISO.
 - Created a Windows Server 2022 virtual machine.
-- Configured the virtual machine (6 GB RAM, 2 vCPUs, 80 GB virtual disk).
+- Configured the VM (6 GB RAM, 2 vCPUs, 80 GB virtual disk).
 - Installed Windows Server 2022 Desktop Experience.
-- Renamed the server from the default hostname to **LAB-DC01**.
-- Captured screenshots documenting each installation step.
-
----
+- Renamed the server to **LAB-DC01**.
+- Captured installation screenshots.
 
 ### Challenges
 
 **Issue**
 
-After restarting the virtual machine to apply the hostname change, Windows Server displayed a black screen instead of booting normally.
+VirtualBox displayed a black screen after rebooting the server.
 
-**Troubleshooting**
+**Resolution**
 
-Performed a **Machine → Reset** from VirtualBox.
-
-**Result**
-
-The virtual machine booted successfully, and the hostname **LAB-DC01** was retained.
-
----
+Performed **Machine → Reset** in VirtualBox.
 
 ### Lessons Learned
 
-- VirtualBox may occasionally hang during a Windows Server reboot.
-- A VirtualBox machine reset can resolve temporary boot issues without losing configuration changes.
-- Enterprise systems should use descriptive hostnames rather than randomly generated default names.
-
----
+- Use descriptive hostnames.
+- Machine Reset can recover from temporary VirtualBox boot issues.
 
 ### Next Objectives
 
 - Install VirtualBox Guest Additions.
 - Configure networking.
 - Install Splunk Enterprise.
-- Install Splunk Universal Forwarder.
-- Install Sysmon.
-- Verify Windows Event Log ingestion into Splunk.
+
+---
 
 ## Day 2 — July 13, 2026
 
-Completed
-- Installed VirtualBox Guest Additions
-- Enabled better screen resolution
-- Enabled shared clipboard
-- Improved mouse integration
-- Restarted the virtual machine
+### Goal
 
-Notes
-Guest Additions greatly improved usability by allowing seamless mouse movement, dynamic screen resizing, and clipboard sharing between the host and the virtual machine.
+Improve the usability of the Windows Server virtual machine before installing security tools.
+
+### Completed
+
+- Installed VirtualBox Guest Additions.
+- Enabled dynamic display resizing.
+- Enabled shared clipboard.
+- Improved mouse integration between the host and guest.
+- Restarted the virtual machine.
+- Captured Guest Additions installation screenshots.
+
+### Lessons Learned
+
+- Guest Additions significantly improves the virtual machine experience.
+- Dynamic display resizing and shared clipboard make administration much easier.
+- Installing Guest Additions early saves time during the rest of the lab.
+
+### Next Objectives
+
+- Configure networking.
+- Install Splunk Enterprise.
+- Install Splunk Universal Forwarder.
+- Install Sysmon.
