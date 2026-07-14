@@ -1,38 +1,19 @@
-\# Detect PowerShell Execution
+# Detect PowerShell Execution
 
-
-
-\## Purpose
-
-
+## Purpose
 
 Detect PowerShell execution using Sysmon Process Create events.
 
-
-
-\## SPL Query
-
-
+## SPL Query
 
 ```spl
-
 index=main PowerShell
-
 ```
 
-
-
-\## Result
-
-
+## Result
 
 This query returns PowerShell execution events collected by Sysmon and forwarded to Splunk.
 
+## Screenshot
 
-
-\## Screenshot
-
-
-
-screenshots/06\_spl\_queries/28\_detect\_powershell.png
-
+screenshots/06_spl_queries/28_detect_powershell.png
