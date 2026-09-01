@@ -24,21 +24,48 @@
 
 ## Phase 2 - Detection Engineering
 
-- [x] Detect PowerShell Execution
-- [x] Detect Command Prompt Execution
+### Authentication
 - [x] Detect Failed Logons (Event ID 4625)
 - [ ] Detect Successful Logons (Event ID 4624)
-- [ ] Detect Network Connections (Sysmon Event ID 3)
+- [ ] Detect RDP Logons (Logon Type 10)
+
+### Process Execution
+- [x] Detect PowerShell Execution
+- [x] Detect Command Prompt Execution
+
+### Account & Privilege Changes
 - [ ] Detect User Account Creation (Event ID 4720)
 - [ ] Detect Administrator Group Changes (Event ID 4732)
+
+### Persistence
 - [ ] Detect Service Installation (Event ID 7045)
 - [ ] Detect Scheduled Task Creation (Event ID 4698)
-- [ ] Detect RDP Logons (Logon Type 10)
+
+### Network / Device Activity
+- [ ] Detect Network Connections (Sysmon Event ID 3)
 - [ ] Detect USB Device Connections (Event ID 6416)
+
+### Correlation Detections
+- [ ] Detect Multiple Failed Logons Followed by Successful Logon
+- [ ] Detect New User Added to Administrators Group
+- [ ] Detect PowerShell Followed by Suspicious Network Connection
 
 ---
 
-## Phase 3 - Dashboards
+## Phase 3 - Detection Rule Documentation
+
+- [ ] Create standardized detection rule template
+- [ ] Convert completed SPL searches into documented detection rules
+- [ ] Document data source
+- [ ] Document Event ID / Sysmon Event ID
+- [ ] Document SPL query
+- [ ] Document false positives
+- [ ] Document investigation steps
+- [ ] Document MITRE ATT&CK mapping
+
+---
+
+## Phase 4 - Dashboards
 
 - [ ] Authentication Dashboard
 - [ ] Process Creation Dashboard
@@ -48,29 +75,44 @@
 
 ---
 
-## Phase 4 - Alerting
+## Phase 5 - Alerting
 
 - [ ] Failed Login Alert
-- [ ] PowerShell Execution Alert
+- [ ] Suspicious PowerShell Alert
 - [ ] New User Account Alert
+- [ ] Administrator Group Change Alert
 - [ ] Service Installation Alert
 - [ ] Scheduled Task Alert
 
 ---
 
-## Phase 5 - Incident Response
+## Phase 6 - Attack Simulations
 
-- [ ] Investigation #001 – Failed Login Activity
-- [ ] Investigation #002 – Suspicious PowerShell Execution
-- [ ] Investigation #003 – Unauthorized Account Creation
-- [ ] Investigation #004 – Malicious Service Installation
+- [ ] Simulate Failed Login Activity
+- [ ] Simulate Successful Login After Multiple Failures
+- [ ] Simulate PowerShell Execution
+- [ ] Simulate New User Creation
+- [ ] Simulate Administrator Group Modification
+- [ ] Simulate Service Installation
+- [ ] Simulate Scheduled Task Creation
 
 ---
 
-## Phase 6 - Future Improvements
+## Phase 7 - Incident Response
+
+- [ ] Investigation #001 - Failed Login Activity
+- [ ] Investigation #002 - Suspicious PowerShell Execution
+- [ ] Investigation #003 - Unauthorized Account Creation
+- [ ] Investigation #004 - Malicious Service Installation
+- [ ] Investigation #005 - Suspicious Authentication Sequence
+
+---
+
+## Phase 8 - Future Improvements
 
 - [ ] Active Directory Integration
 - [ ] Sysmon Configuration Tuning
+- [ ] Additional Windows Event Sources
 - [ ] MITRE ATT&CK Mapping
 - [ ] Sigma Rule Mapping
 - [ ] Splunk Enterprise Security Integration
