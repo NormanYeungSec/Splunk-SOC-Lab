@@ -20,3 +20,12 @@ index=main EventCode=4624 Logon_Type=2
 | eval Successful_Account=mvindex(Account_Name,1)
 | table _time Successful_Account Logon_Type Logon_Process Authentication_Package ComputerName
 | sort - _time
+```
+
+## What I Tested / Result
+
+The search returned one successful logon event for the Administrator account. The result showed Logon Type 2, `User32` as the logon process, and `Negotiate` as the authentication package.
+
+## Screenshot
+
+![Successful logon search results](../screenshots/detections/04_detect_successful_logon.png)
