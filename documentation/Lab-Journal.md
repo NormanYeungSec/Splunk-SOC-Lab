@@ -2,7 +2,7 @@
 
 ---
 
-## Day 1 — July 12, 2026
+## Lab Session 1
 
 ### Completed
 
@@ -24,7 +24,7 @@
 
 ---
 
-## Day 2 — July 13, 2026
+## Lab Session 2
 
 ### Completed
 
