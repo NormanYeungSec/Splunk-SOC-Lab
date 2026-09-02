@@ -23,3 +23,12 @@ NOT (
 )
 | table _time User ParentImage Image CommandLine ProcessId ParentProcessId
 | sort - _time
+```
+
+## What I Tested / Result
+
+The search returned one `cmd.exe` process creation event. The result showed `explorer.exe` as the parent process and the Administrator user.
+
+## Screenshot
+
+![Command Prompt execution search results](../screenshots/06_detections/29_detect_cmd.png)

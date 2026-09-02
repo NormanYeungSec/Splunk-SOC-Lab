@@ -19,3 +19,12 @@ Sysmon Event ID 1 is created whenever a new process starts on the system.
 index=main EventCode=1 Image="*\\powershell.exe"
 | table _time User ParentImage Image CommandLine ProcessId ParentProcessId
 | sort - _time
+```
+
+## What I Tested / Result
+
+The search returned two PowerShell process creation events. The results showed the user, parent process, command line, process ID, and parent process ID.
+
+## Screenshot
+
+![PowerShell execution search results](../screenshots/06_detections/28_detect_powershell.png)

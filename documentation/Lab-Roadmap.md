@@ -1,5 +1,7 @@
 # Splunk SOC Lab Roadmap
 
+Completed setup work is recorded in the [lab journal](Lab-Journal.md) and the [screenshot collection](../screenshots/README.md).
+
 ---
 
 ## Phase 1 - Lab Setup
@@ -25,27 +27,33 @@
 ## Phase 2 - Detection Engineering
 
 ### Authentication
-- [x] Detect Failed Logons (Event ID 4625)
+
+- [x] [Detect Failed Logons (Event ID 4625)](../spl_queries/03_detect_failed_logon.md)
 - [ ] Detect Successful Logons (Event ID 4624)
 - [ ] Detect RDP Logons (Logon Type 10)
 
 ### Process Execution
-- [x] Detect PowerShell Execution
-- [x] Detect Command Prompt Execution
+
+- [x] [Detect PowerShell Execution](../spl_queries/01_detect_powershell.md)
+- [x] [Detect Command Prompt Execution](../spl_queries/02_detect_cmd.md)
 
 ### Account & Privilege Changes
+
 - [ ] Detect User Account Creation (Event ID 4720)
 - [ ] Detect Administrator Group Changes (Event ID 4732)
 
 ### Persistence
+
 - [ ] Detect Service Installation (Event ID 7045)
 - [ ] Detect Scheduled Task Creation (Event ID 4698)
 
 ### Network / Device Activity
+
 - [ ] Detect Network Connections (Sysmon Event ID 3)
 - [ ] Detect USB Device Connections (Event ID 6416)
 
 ### Correlation Detections
+
 - [ ] Detect Multiple Failed Logons Followed by Successful Logon
 - [ ] Detect New User Added to Administrators Group
 - [ ] Detect PowerShell Followed by Suspicious Network Connection

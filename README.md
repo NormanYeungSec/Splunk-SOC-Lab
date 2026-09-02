@@ -2,25 +2,31 @@
 
 ## Overview
 
-This project demonstrates my ability to use Splunk Enterprise as a SIEM to detect, investigate, and analyze Windows security events.
+This repository documents my home SOC lab. I use Splunk Enterprise, Windows event logs, and Sysmon to collect data and test simple detection searches.
 
-## Environment
+## Current Lab
 
-- Windows 11 VM
+- Windows 11 host
+- Oracle VirtualBox
+- Windows Server 2022 virtual machine (`LAB-DC01`)
 - Splunk Enterprise
 - Splunk Universal Forwarder
-- Sysmon
-- VirtualBox
+- Sysmon with the SwiftOnSecurity configuration
+- Splunk Add-on for Sysmon
 
-## Skills Demonstrated
+## Detection Searches
 
-- SPL
-- Windows Event Logs
-- Threat Hunting
-- Log Analysis
-- Dashboard Creation
-- Incident Investigation
+- [Detect PowerShell Execution](spl_queries/01_detect_powershell.md)
+- [Detect Command Prompt Execution](spl_queries/02_detect_cmd.md)
+- [Detect Failed Logons](spl_queries/03_detect_failed_logon.md)
 
----
+## Documentation
 
-🚧 This project is currently under development. More documentation, screenshots, detection queries, and incident investigations will be added as I continue building my home SOC lab.
+- [Lab Architecture](documentation/Lab-Architecture.md)
+- [Lab Journal](documentation/Lab-Journal.md)
+- [Lab Roadmap](documentation/Lab-Roadmap.md)
+- [Screenshot Guide](screenshots/README.md)
+
+## Current Status
+
+The basic lab setup is complete, and three detection searches are documented. The remaining work is tracked in the [lab roadmap](documentation/Lab-Roadmap.md).
