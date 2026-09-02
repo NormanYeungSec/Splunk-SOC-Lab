@@ -28,4 +28,4 @@ The search returned two failed logon events for the Administrator account. Both 
 
 ## Screenshot
 
-![Failed logon search results](../screenshots/06_detections/32_detect_failed_logon.png)
+![Failed logon search results](../screenshots/detections/03_detect_failed_logon.png)

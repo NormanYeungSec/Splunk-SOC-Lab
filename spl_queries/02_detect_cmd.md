@@ -31,4 +31,4 @@ The search returned one `cmd.exe` process creation event. The result showed `exp
 
 ## Screenshot
 
-![Command Prompt execution search results](../screenshots/06_detections/29_detect_cmd.png)
+![Command Prompt execution search results](../screenshots/detections/02_detect_cmd.png)

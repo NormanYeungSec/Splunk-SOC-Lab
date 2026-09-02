@@ -27,4 +27,4 @@ The search returned two PowerShell process creation events. The results showed t
 
 ## Screenshot
 
-![PowerShell execution search results](../screenshots/06_detections/28_detect_powershell.png)
+![PowerShell execution search results](../screenshots/detections/01_detect_powershell.png)
