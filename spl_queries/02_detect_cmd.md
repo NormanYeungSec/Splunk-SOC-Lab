@@ -2,18 +2,24 @@
 
 ## Purpose
 
-Detect Command Prompt (cmd.exe) execution using Sysmon events collected by Splunk.
+The goal of this search is to find when Command Prompt (`cmd.exe`) is launched on the Windows Server.
+
+Command Prompt is a normal Windows tool, but attackers can also use it to run commands and interact with a system. Because of that, I wanted to be able to see when it starts and what launched it.
+
+## Data Source
+
+- Sysmon
+- Event ID 1 - Process Creation
+
+Sysmon Event ID 1 is created whenever a new process starts on the system.
 
 ## SPL Query
 
 ```spl
-index=main cmd.exe
-```
-
-## Result
-
-Displays Command Prompt execution events collected by Sysmon and indexed in Splunk. These events can be used to investigate command-line activity on the system.
-
-## Screenshot
-
-screenshots/06_spl_queries/29_detect_cmd.png
+index=main EventCode=1 Image="*\\cmd.exe"
+NOT (
+    User="NT SERVICE\\Splunkd"
+    AND ParentImage="*\\Splunk\\bin\\postgres.exe"
+)
+| table _time User ParentImage Image CommandLine ProcessId ParentProcessId
+| sort - _time
