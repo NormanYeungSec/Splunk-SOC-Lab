@@ -39,7 +39,7 @@ Completed setup work is recorded in the [lab journal](Lab-Journal.md) and the [s
 
 ### Account & Privilege Changes
 
-- [ ] Detect User Account Creation (Event ID 4720)
+- [x] Detect User Account Creation (../spl_queries/06_detect_user_creation.md)
 - [ ] Detect Administrator Group Changes (Event ID 4732)
 
 ### Persistence
@@ -49,7 +49,7 @@ Completed setup work is recorded in the [lab journal](Lab-Journal.md) and the [s
 
 ### Network / Device Activity
 
-- [ ] Detect Network Connections (Sysmon Event ID 3)
+- [x] Detect Network Connections (../spl_queries/05_detect_network_connection.md)
 - [ ] Detect USB Device Connections (Event ID 6416)
 
 ### Correlation Detections
