@@ -40,7 +40,7 @@ Completed setup work is recorded in the [lab journal](Lab-Journal.md) and the [s
 ### Account & Privilege Changes
 
 - [x] Detect User Account Creation (../spl_queries/06_detect_user_creation.md)
-- [ ] Detect Administrator Group Changes (Event ID 4732)
+- [x] Detect Administrator Group Changes (../spl_queries/07_detect_admin_group_change.md)
 
 ### Persistence
 
