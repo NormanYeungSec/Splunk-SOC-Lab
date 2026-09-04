@@ -44,8 +44,8 @@ Completed setup work is recorded in the [lab journal](Lab-Journal.md) and the [s
 
 ### Persistence
 
-- [x] Detect Service Installation ((../spl_queries/08_detect_service_installation.md)
-- [ ] Detect Scheduled Task Creation (Event ID 4698)
+- [x] Detect Service Installation (../spl_queries/08_detect_service_installation.md)
+- [x] Detect Scheduled Task Creation (../spl_queries/09_detect_scheduled_task_creation.md)
 
 ### Network / Device Activity
 
