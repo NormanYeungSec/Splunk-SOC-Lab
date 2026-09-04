@@ -30,7 +30,7 @@ Completed setup work is recorded in the [lab journal](Lab-Journal.md) and the [s
 
 - [x] [Detect Failed Logons (Event ID 4625)](../spl_queries/03_detect_failed_logon.md)
 - [x] Detect Successful Logons (../spl_queries/04_detect_successful_logon.md)
-- [ ] Detect RDP Logons (Logon Type 10)
+- [x] Detect RDP Logons (../spl_queries/10_detect_rdp_logon.md)
 
 ### Process Execution
 
